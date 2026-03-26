@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- Bouton pour ouvrir la messagerie -->
+    <Button
+        android:id="@+id/btnOpenMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ouvrir la messagerie"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Liste des messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Zone de saisie de message (remontée) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+    android:background="#EEEEEE"
+    android:elevation="4dp">
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="Écrire un message"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:layout_marginLeft="6dp"/>
+</LinearLayout>
+
+    </LinearLayout>

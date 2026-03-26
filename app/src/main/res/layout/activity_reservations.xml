@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- En-tête -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvReservationsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes Réservations"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liste des activités réservées"
+                android:textColor="@color/white"
+                android:alpha="0.85"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- Boutons de filtrage -->
+        <LinearLayout
+            android:id="@+id/layoutFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Toutes"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnPast"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Passées"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/gray_400"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnUpcoming"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Prochaines"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/gray_400"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Bouton Voir Calendrier -->
+        <Button
+            android:id="@+id/btnViewCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Voir Calendrier"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <!-- Carte contenant la liste des réservations -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vos réservations"
+                    android:textColor="@color/gray_700"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerReservations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vous pouvez gérer ou annuler vos réservations à tout moment."
+            android:textColor="@color/white_alpha_80"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

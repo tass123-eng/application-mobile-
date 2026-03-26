@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom Événement"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvDaysLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 jours restants"
+            android:textSize="12sp"
+            android:textColor="@color/gray_600"
+            android:layout_marginTop="2dp"/>
+
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom complet"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Âge"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvInterests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intérêts"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray_600"/>
+
+        <!-- Bouton Annuler -->
+        <Button
+            android:id="@+id/btnCancelReservation"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Annuler"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="16dp"
+            android:stateListAnimator="@null"
+            app:cornerRadius="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

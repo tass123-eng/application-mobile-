@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image de l'événement -->
+        <ImageView
+            android:id="@+id/ivDetailEventImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Image de l'événement"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_event" />
+
+        <!-- Nom de l'événement -->
+        <TextView
+            android:id="@+id/tvDetailEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'événement"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Catégorie -->
+        <TextView
+            android:id="@+id/tvDetailEventCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catégorie : Sport"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDetailEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description complète de l'événement"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDetailEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : 15 Décembre 2025"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Lieu -->
+        <TextView
+            android:id="@+id/tvDetailEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lieu : Paris, Stade Municipal"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Nombre de participants (statique) -->
+        <TextView
+            android:id="@+id/tvDetailEventParticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Participants : 24/50"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Prix (statique) -->
+        <TextView
+            android:id="@+id/tvDetailEventPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix : Gratuit"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bouton s'inscrire -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="S'inscrire"
+            android:backgroundTint="#5F4B8B"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Bouton voir sur la map -->
+        <Button
+            android:id="@+id/btnShowMap"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Voir sur la map"
+            android:backgroundTint="#2979FF"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

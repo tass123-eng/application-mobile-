@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amis ayant des hobbies communs"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Nouveau bouton pour ouvrir la messagerie -->
+    <Button
+        android:id="@+id/btnOpenMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ouvrir la messagerie"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFriends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

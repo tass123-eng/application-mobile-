@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+            <ImageView
+                android:id="@+id/ivEventImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+
+                android:contentDescription="Image de l'événement" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+               />
+
+
+            <TextView
+                android:id="@+id/tvCategoryBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="12dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+
+                android:text="SPORT"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <!-- Badge date -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="12dp"
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="@color/white"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvEventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 NOV"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Contenu de l'événement -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Titre de l'événement -->
+            <TextView
+                android:id="@+id/tvEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tournoi de Football Amical"
+                android:textColor="@color/gray_900"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tournoi amical ouvert à tous les niveaux. Apportez votre bonne humeur !"
+                android:textColor="@color/gray_600"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Localisation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/primary_blue_violet"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tvEventLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paris, Stade Municipal"
+                    android:textColor="@color/gray_700"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/btnShowMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Voir sur la map"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/accent_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    app:cornerRadius="8dp" />
+
+            </LinearLayout>
+
+            <!-- Séparateur -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_200"
+                android:layout_marginTop="12dp" />
+
+            <!-- Pied de carte -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <!-- Participants -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_people"
+                        app:tint="@color/gray_500"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvParticipants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24/50 participants"
+                        android:textColor="@color/gray_600"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Bouton réserver -->
+                <Button
+                    android:id="@+id/btnReserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Réserver"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp"
+                    android:backgroundTint="@color/primary_blue_violet"
+                    app:cornerRadius="10dp"
+                    android:stateListAnimator="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

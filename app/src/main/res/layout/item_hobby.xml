@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp">
+
+    <!-- Image carrée plus grande -->
+    <ImageView
+        android:id="@+id/ivHobby"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_ic"
+        android:contentDescription="Hobby Image"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_circle_accent"/>
+
+    <!-- Nom du hobby -->
+    <TextView
+        android:id="@+id/tvHobbyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"/>
+
+    <!-- Checkbox sous le titre -->
+    <CheckBox
+        android:id="@+id/cbHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

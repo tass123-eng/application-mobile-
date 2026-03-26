@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_ripple_effect">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- En-tête de la carte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <!-- Icône événement -->
+            <ImageView
+                android:id="@+id/ivEventIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_event"
+                android:tint="@color/primary_blue_violet"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Titre et lieu -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom de l'événement"
+                    android:textColor="@color/gray_900"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_location"
+                        android:tint="@color/gray_600"
+                        android:layout_marginEnd="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvEventLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ville"
+                        android:textColor="@color/gray_600"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Badge date -->
+            <TextView
+                android:id="@+id/tvEventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 Déc"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/date_badge"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp" />
+
+        </LinearLayout>
+
+        <!-- Séparateur -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_200"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Détails supplémentaires -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Participants -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_people"
+                    android:tint="@color/gray_500"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvParticipants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50+"
+                    android:textColor="@color/gray_600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Catégorie -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_category"
+                    android:tint="@color/gray_500"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Musique"
+                    android:textColor="@color/gray_600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Prix -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_price"
+                    android:tint="@color/gray_500"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gratuit"
+                    android:textColor="@color/gray_600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bouton d'action -->
+        <Button
+            android:id="@+id/btnJoinEvent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Rejoindre l'événement"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_blue_violet"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:cornerRadius="8dp" />
+        <Button
+            android:id="@+id/btnShowMap"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Voir sur la map"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/accent_blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="8dp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

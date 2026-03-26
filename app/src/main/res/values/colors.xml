@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs principales bleu-violet -->
+    <color name="primary_blue_violet">#6D67E4</color>
+    <color name="primary_dark">#5A54C7</color>
+    <color name="primary_light">#8B85F0</color>
+
+    <!-- Dégradé de fond -->
+    <color name="gradient_start">#667eea</color>
+    <color name="gradient_end">#764ba2</color>
+
+    <!-- Couleurs d'accent -->
+    <color name="accent_blue">#4A90E2</color>
+    <color name="accent_purple">#9B59B6</color>
+    <color name="accent_teal">#2ECC71</color>
+    <color name="accent_green">#4CAF50</color>
+    <!-- Couleurs neutres -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+    <color name="purple_500">#6200EE</color>
+
+    <!-- Nouvelles couleurs ajoutées pour le profil -->
+
+    <!-- Couleurs de badge et overlay -->
+    <color name="badge_premium_bg">#40FFFFFF</color>
+    <color name="badge_premium_border">#FFFFFFFF</color>
+
+    <!-- Couleurs d'effet ripple -->
+    <color name="ripple_primary">#206D67E4</color>
+    <color name="ripple_avatar">#20000000</color>
+    <color name="ripple_logout">#339B59B6</color>
+
+    <!-- Couleurs spécifiques aux cartes -->
+    <color name="card_stats_bg">#FFFFFFFF</color>
+    <color name="card_actions_bg">#FFFFFFFF</color>
+    <color name="card_my_hobbies_bg">#8B85F0</color>
+    <color name="card_settings_bg">#F5F5F5</color>
+    <color name="card_logout_bg">#FFFFFFFF</color>
+
+    <!-- Couleurs de texte spécifiques -->
+    <color name="text_stats_title">#6D67E4</color>
+    <color name="text_actions_title">#6D67E4</color>
+    <color name="text_hobbies_count">#6D67E4</color>
+    <color name="text_clubs_count">#4A90E2</color>
+    <color name="text_events_count">#9B59B6</color>
+    <color name="text_my_hobbies">#FFFFFFFF</color>
+    <color name="text_settings">#424242</color>
+    <color name="text_logout">#9B59B6</color>
+
+    <!-- Couleurs d'icônes -->
+    <color name="icon_my_hobbies">#FFFFFFFF</color>
+    <color name="icon_settings">#757575</color>
+    <color name="icon_logout">#9B59B6</color>
+    <color name="icon_avatar">#6D67E4</color>
+
+    <!-- Couleurs de séparateur -->
+    <color name="separator_stats">#E0E0E0</color>
+
+    <!-- Couleurs d'ombre et elevation -->
+    <color name="shadow_light">#1A000000</color>
+    <color name="shadow_medium">#33000000</color>
+    <color name="shadow_dark">#4D000000</color>
+
+    <!-- États et interactions -->
+    <color name="state_pressed">#336D67E4</color>
+    <color name="state_focused">#1A6D67E4</color>
+    <color name="state_hovered">#0D6D67E4</color>
+
+    <!-- Couleurs de statut -->
+    <color name="status_premium">#FFD700</color>
+    <color name="status_online">#2ECC71</color>
+    <color name="status_offline">#95A5A6</color>
+    <color name="status_busy">#E74C3C</color>
+    <color name="accent_orange">#FFA500</color> <!-- ou la couleur que tu veux -->
+
+    <!-- Couleurs de progression -->
+    <color name="progress_background">#E0E0E0</color>
+    <color name="progress_primary">#6D67E4</color>
+    <color name="progress_secondary">#4A90E2</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Couleurs de notification -->
+    <color name="notification_success">#2ECC71</color>
+    <color name="notification_warning">#F39C12</color>
+    <color name="notification_error">#E74C3C</color>
+    <color name="notification_info">#3498DB</color>
+
+
+
+    <!-- Couleurs principales -->
+    <color name="primary_color">#4A6FA5</color>
+
+
+    <!-- Couleurs de statut -->
+    <color name="green_50">#E8F5E9</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_500">#4CAF50</color>
+
+    <!-- Gris et neutres -->
+    <color name="background_gray">#F5F7FA</color>
+
+    <color name="white_alpha_80">#CCFFFFFF</color>
+
+    <color name="accent_color">#03DAC5</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="selected_state">#F3E5F5</color>
+    <color name="switch_track">#E0E0E0</color>
+
+</resources>

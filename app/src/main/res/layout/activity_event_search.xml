@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- En-tête -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recherche d'Événements"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Zone de recherche -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                app:tint="@color/gray_500"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="12dp" />
+
+            <EditText
+                android:id="@+id/etSearchCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Rechercher par ville..."
+                android:padding="12dp"
+                android:background="@null"
+                android:textColor="@color/gray_800"
+                android:textSize="16sp"
+                android:maxLines="1" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Boutons de catégories -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sport"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musique"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnTech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tech"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Art"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/btnSuggested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Événements suggérés"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/initialLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recherchez des événements par ville"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:alpha="0.9" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Tapez le nom d'une ville pour découvrir les événements à proximité"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:alpha="0.7" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+</LinearLayout>
